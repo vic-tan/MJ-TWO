@@ -5,11 +5,6 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.support.multidex.MultiDex;
 
-import com.tlfmj.bao.sampletwo.bean.CaiPiaoBean;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import cn.jpush.android.api.JPushInterface;
 
 /**
@@ -18,14 +13,12 @@ import cn.jpush.android.api.JPushInterface;
 public class App extends Application {
     private static final String CANARO_EXTRA_BOLD_PATH = "fonts/canaro_extra_bold.otf";
     public static Typeface canaroExtraBold;
-    public static List<CaiPiaoBean> list;
 
     @Override
     public void onCreate() {
         super.onCreate();
         JPushInterface.setDebugMode(true);
         JPushInterface.init(this);
-        list = new ArrayList<>();
         initTypeface();
     }
 

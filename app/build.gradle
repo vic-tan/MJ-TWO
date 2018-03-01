@@ -39,15 +39,10 @@ dependencies {
     implementation project(':library')
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.github.lecho:hellocharts-android:v1.5.8'
-    compile 'com.github.vic-tan:mj-com-utils:1.0.8'
+    compile 'com.github.vic-tan:mj-com-utils:1.1.0'
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    compile 'com.vic-tan:basic-library-uikit:1.0.9'
-    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
-    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
-    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    compile 'com.squareup.picasso:picasso:2.5.2'
+
 
     compile 'cn.jiguang.sdk:jpush:3.1.1'  // 此处以JPush 3.1.1 版本为例。
     compile 'cn.jiguang.sdk:jcore:1.1.9'  // 此处以JCore 1.1.9 版本为例。

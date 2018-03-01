@@ -2,11 +2,10 @@ package com.tlfmj.bao.sampletwo.navigator;
 
 import android.support.v4.app.Fragment;
 
-import com.tlfmj.bao.sampletwo.fragment.FiveFragment;
-import com.tlfmj.bao.sampletwo.fragment.FourFragment;
-import com.tlfmj.bao.sampletwo.fragment.OneFragment;
-import com.tlfmj.bao.sampletwo.fragment.ThreeFragment;
-import com.tlfmj.bao.sampletwo.fragment.TwoFragment;
+import com.mj.utils.fragment.cp.HistoryFragment;
+import com.mj.utils.fragment.cp.NewsFragment;
+import com.mj.utils.fragment.cp.SettingFragment;
+import com.mj.utils.fragment.cp.TrendFragment;
 
 
 /**
@@ -19,34 +18,30 @@ public class HomeNavigatorFragmentAdapter implements FragmentNavigatorAdapter {
     @Override
     public Fragment onCreateFragment(int position) {
         if (position == 0) {
-            return new OneFragment();
+            return new TrendFragment();
         } else if (position == 1) {
-            return new TwoFragment();
+            return new NewsFragment();
         } else if (position == 2) {
-            return new ThreeFragment();
+            return new HistoryFragment();
         } else if (position == 3) {
-            return new FourFragment();
-        } else if (position == 4) {
-            return new FiveFragment();
+            return new SettingFragment();
         }
-        return new OneFragment();
+        return new TrendFragment();
     }
 
 
     @Override
     public String getTag(int position) {
         if (position == 0) {
-            return OneFragment.TAG;
+            return TrendFragment.TAG;
         } else if (position == 1) {
-            return TwoFragment.TAG;
+            return NewsFragment.TAG;
         } else if (position == 2) {
-            return ThreeFragment.TAG;
+            return HistoryFragment.TAG;
         } else if (position == 3) {
-            return FourFragment.TAG;
-        } else if (position == 4) {
-            return FiveFragment.TAG;
+            return SettingFragment.TAG;
         }
-        return OneFragment.TAG;
+        return TrendFragment.TAG;
     }
 
     @Override
