@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">三分彩</string>
+    <string name="profile">走势</string>
+    <string name="feed">资讯</string>
+    <string name="activity">历史</string>
+    <string name="settings">设置</string>
+</resources>
