@@ -29,7 +29,7 @@
                 style="@style/ImageView.Hamburger"
                 android:src="@drawable/ic_menu_90"/>
 
-            <com.tlfmj.bao.sampletwo.widget.CanaroTextView
+            <com.tlfmj.bao.jwmjtwo.widget.CanaroTextView
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

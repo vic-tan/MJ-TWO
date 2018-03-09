@@ -6,11 +6,11 @@ android {
     buildToolsVersion "26.0.2"
 
     defaultConfig {
-        applicationId "com.tlfmj.bao.sampletwo"
+        applicationId "com.tlfmj.bao.jwmjtwo"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0.0"
+        versionCode 3
+        versionName "1.0.1"
         ndk {
             //选择要添加的对应cpu类型的.so库。
             abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a','x86', 'x86_64', 'mips', 'mips64'
@@ -18,7 +18,7 @@ android {
         }
         manifestPlaceholders = [
                 JPUSH_PKGNAME : applicationId,
-                JPUSH_APPKEY : "2dd51f0a8923e1df44b1b47f", //JPush上注册的包名对应的appkey.
+                JPUSH_APPKEY : "f50ad86ac9aa2fde280a8db5", //JPush上注册的包名对应的appkey.
                 JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
         ]
     }
@@ -37,13 +37,13 @@ android {
 
 dependencies {
     implementation project(':library')
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.github.vic-tan:mj-com-utils:1.1.0'
-    compile 'com.jakewharton:butterknife:8.8.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:24.2.1'
+    implementation 'com.github.vic-tan:mj-com-utils:1.1.9'
+    implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
 
-    compile 'cn.jiguang.sdk:jpush:3.1.1'  // 此处以JPush 3.1.1 版本为例。
-    compile 'cn.jiguang.sdk:jcore:1.1.9'  // 此处以JCore 1.1.9 版本为例。
+    implementation 'cn.jiguang.sdk:jpush:3.1.1'  // 此处以JPush 3.1.1 版本为例。
+    implementation 'cn.jiguang.sdk:jcore:1.1.9'  // 此处以JCore 1.1.9 版本为例。
 }
